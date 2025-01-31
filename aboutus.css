@@ -1,0 +1,343 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/* SECTION - Navigation Bar ===================================================================================================== */
+
+.NavBarTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: #1D5929;
+    z-index: 1000;
+}
+
+#Logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10%;
+    filter: brightness(100%);
+}
+
+.NavBarTop nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    margin: 150px;
+    padding: 0;
+    margin-right: 300px;
+}
+
+.NavBarTop nav ul li {
+    display: inline-block;
+}
+
+.NavBarTop nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.NavBarTop nav ul li a:hover {
+    color: #f1f1f1cc;
+}
+
+
+
+/* SECTION - Hero About ===================================================================================================== */
+
+#Wallpaper1 {
+    height: 95vh;
+    width: 100vw;
+    object-fit: cover;
+    display: block;
+    filter: brightness(30%);
+    opacity: 100%;
+}
+
+.HeroSection {
+    position: relative;
+    margin-top: -50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content slightly to the left */
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+}
+
+/* Header Text */
+.HeroSection h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    max-width: 70%;
+    margin: 0;
+}
+
+/* Paragraph Text */
+.HeroSection p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 70%; /* Controls line length */
+    margin-top: 10px;
+}
+
+/* SECTION - Hero About ===================================================================================================== */
+
+/* ===== CLUB HISTORY SECTION ===== */
+
+
+.ClubHistory {
+    margin-top: 10%;
+    padding: 50px 20%;
+    color: black;
+    background: #ffffff;
+}
+
+.ClubHistory h2 {
+    padding-top: 5%;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.ClubHistory p {
+    margin-left: -5%;
+    margin-top: -2.5%;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 50px 15%;
+    padding-bottom: 15%;
+}
+
+
+/* SECTION - Hero About ===================================================================================================== */
+
+/* ===== WHAT WE DO SECTION ===== */
+
+
+
+.WhatWeDo {
+    padding-top: 1%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 80px 10%;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.WhatWeDo h2 {
+    margin-top: -2.5%;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+
+}
+
+.ActivitiesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.Activity {
+    width: 30%;
+    max-width: 320px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    border: 0.4px solid #ffffff;
+}
+
+.Activity img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.Activity h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Activity p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+ /* SECTION - MEMBERS ===================================================================================================== */
+
+/* Member Section */
+
+.MemberSection {
+    margin-top: -15%;
+    text-align: center;
+    padding: 50px 15%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.MemberSection h2 {
+    font-size: 2rem;
+    font-weight: 350;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-align: left;
+    margin-top: -4%;
+}
+
+.MemberSection h3 {
+    padding-top: 15%;
+    font-size: 1    rem;
+    font-weight: 350;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+.MemberContainer {
+    padding-top: 1.0%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 7.5%;
+}
+
+
+.MemberBox {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 280px; /
+}
+
+/* Member Image */
+.MemberBox img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.LinkedInLink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 15px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.LinkedInLink a {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.MemberBox:hover img {
+    filter: brightness(20%);
+}
+
+.MemberBox:hover .LinkedInLink {
+    opacity: 1;
+}
+
+.MemberBox h3 {
+
+    font-size: 1.5rem;
+    font-weight: 450;   
+    margin-top: -12%;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+/* Description */
+.MemberBox p {
+    margin-top: -5%;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+
+
+/* SECTION - FOOTER ===================================================================================================== */
+
+/* FOOTER */
+.Footer {
+    margin-top: 6%;
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.FooterContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.FooterLinks {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.FooterLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.FooterLinks a:hover {
+    color: #1D5929; /* Subtle red hover effect */
+}

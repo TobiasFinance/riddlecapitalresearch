@@ -1,0 +1,565 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+/* SECTION - Navigation Bar ===================================================================================================== */
+
+.NavBarTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: #1D5929;
+    z-index: 1000;
+
+}
+
+#Logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10%;
+    filter: brightness(100%);
+
+}
+
+.NavBarTop nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    margin: 150px;
+    padding: 0;
+    margin-right: 300px;
+}
+
+.NavBarTop nav ul li {
+    display: inline-block;
+}
+
+.NavBarTop nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.NavBarTop nav ul li a:hover {
+    color: #f1f1f1cc;
+}
+
+
+
+/* SECTION - HERO ===================================================================================================== */
+
+#Wallpaper {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    z-index: 1;
+    opacity: 65%;
+    filter: grayscale(30%);
+}
+
+.HeroSection {
+    position: relative;
+    margin-top: -50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content slightly to the left */
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+}
+
+/* Logo Styling */
+#logohero {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Header Text */
+.HeroSection h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Paragraph Text */
+.HeroSection p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 500px; /* Controls line length */
+    margin-top: 10px;
+}
+
+.HeroButton {
+    display: inline-block;
+    margin-top: 5px;
+    width: 150px;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: #ffffff;    
+}
+
+/* SECTION - RESEARCH ===================================================================================================== */
+
+
+.ResearchSection {
+    margin-top: 5%;
+    text-align: center;
+    padding: 50px 15%;
+    color: white;
+    background-color: #000000;
+}
+
+
+.ResearchSection h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Research Container */
+.ResearchContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Research Box */
+.ResearchBox {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+
+    
+}
+
+/* Research Image */
+.ResearchBox img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(70%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Centered Research Content */
+.ResearchContent {
+    position: static;
+    top: 150%;
+    left: 100%;
+    width: 100%;
+    text-align: left;
+    color: white;
+    z-index: 1;
+}
+
+.ResearchContent h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+.ResearchContent p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    margin-right: 15%;
+    text-decoration: none;
+
+}
+
+.ResearchBox a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ResearchBox:hover img {
+    filter: brightness(30%);
+}
+
+.DownloadText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ResearchBox:hover .DownloadText {
+    opacity: 1;
+}
+
+
+/* More Research link ------------ */ 
+
+.MoreResearch {
+margin-right: -100%;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+/* More Link */
+.MoreLink {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.MoreLink:hover {
+    color: #d3d3d3;
+}
+
+/* SECTION - ABOUT US ===================================================================================================== */
+
+/* SECTION - ABOUT US */
+.AboutSection {
+    margin-top: 8%;
+    padding: 50px 10%;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Beige Box */
+.AboutBox {
+    margin-top: 10%;
+    background: rgb(243, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 85.5%;
+}
+
+/* Left Image */
+.AboutImage {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    height: 100%;
+    width: auto
+}
+
+.AboutImage img {   
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-width: 100%
+}
+
+/* About Text */
+.AboutContainer {
+    flex: 1; /* Takes 50% width */
+    text-align: left;
+}
+
+.AboutContainer h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.AboutContainer p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    max-width: 80%;
+}
+
+/* Contact Button */
+.ContactButton {
+    display: inline-block;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #000000;
+}
+
+
+
+
+
+
+/* SECTION - Career Opportunities ===================================================================================================== */
+
+
+.CareerOpportunities {
+    padding-top: 5%;
+    margin-top: -3%;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center; 
+    padding-bottom: 5%;
+    text-align: left;
+    width: 100vw;
+    padding: 50px 15%;
+    padding-bottom: 15%;
+
+}
+
+
+.CareerOpportunities h2 {
+
+    margin-top: 5%;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: left;
+    max-width: 40%;
+}   
+
+.CareerOpportunities p {
+    text-align: center; 
+    margin-top: 4%;
+    font-size: 1.6rem;  
+    margin-bottom: -3%;
+    text-align: left;
+    margin-left: 5%;
+    max-width: 50%;
+    font-weight: 300;
+}
+
+
+
+.CareerOpportunities a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    padding-bottom: 35%;
+}
+
+.CareerOpportunities a:hover {
+    text-decoration: underline;
+    padding-bottom: 10  0px;
+}
+
+
+/* SECTION - WHAT WE COVER ===================================================================================================== */
+/* What We Cover Section */
+
+.WhatWeCover {
+    padding-top: 75px;
+    text-align: left;
+    padding: 50px 15%;
+    background: rgb(243, 241, 241);
+    color: rgb(0, 0, 0);
+}
+
+.WhatWeCover h2 {
+    padding-top: 100px  ;
+    font-size: 1rem;
+    font-weight: 370;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#whatwecoverresearch {
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: -7%;
+
+}
+
+/* Container for Images */
+.CoverContainer {
+    display: flex;
+    justify-content: center;
+    gap: 0%; /* Space between images */
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.CoverImage img {
+    width: 100%;
+    max-width: 100vw; 
+    height: 75%;
+    object-fit: cover;
+    
+}
+
+
+.CoverTopics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 50px; 
+    justify-content: center;
+    text-align: left;
+    max-width: 80%;
+    margin: auto;
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+
+.Topic {
+    max-width: 100%;
+}
+
+
+.Topic h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Topic p {
+    max-width: 80%;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+
+
+
+/* SECTION - FOONEWSLETTER ===================================================================================================== */
+
+/* NEWSLETTER SECTION */
+
+
+
+
+.LinkedInKCC {
+    text-align: center;
+    padding: 50px 10%;
+    background: #1D5929;
+    color: black;
+}
+
+.LinkedInKCC h2 {
+    padding: 50px 10%;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 3%;
+}
+
+
+
+.LinkedInKCC p {
+    font-size: 1.7rem;
+    font-weight: 350;
+    margin-bottom: 20px;
+    padding: 50px 10%;
+    text-align: left;
+    margin-top: -4%;
+    margin-left: 3%;
+    max-width: 40%;
+}
+
+/* LINKEDIN BUTTON */
+.LinkedInKCC a {
+    text-decoration: none;
+}
+
+.LinkedInKCC button {
+    display: block;
+    margin-left: 13%;
+    text-align: left;
+    padding: 14px 24px;
+    font-size: 1.5rem;
+    font-weight: 50 0;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+
+
+/* SECTION - FOOTER ===================================================================================================== */
+
+/* FOOTER */
+.Footer {
+    margin-top: 6%;
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#PhotoFooter {
+    margin-left: 100%;
+    height: 100px;
+    width: auto;
+    margin-top: -7%;
+    padding-bottom: 1%;
+}
+
+.FooterContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.FooterLinks {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.FooterLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.FooterLinks a:hover {
+    color: #1D5929; /* Subtle red hover effect */
+}
+
